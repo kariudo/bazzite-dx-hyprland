@@ -12,6 +12,9 @@ set -ouex pipefail
 # remove kde plasma
 dnf5 -y remove plasma-workspace plasma-* kde-*
 
+# remove gnome
+dnf5 -y remove gnome-shell gnome-* gdm
+
 # setup hyprland from COPR
 dnf5 -y copr enable solopasha/hyprland
 dnf5 -y install			\
@@ -31,7 +34,7 @@ dnf5 -y copr disable solopasha/hyprland
 
 # more desktop-environment utils
 dnf5 -y install		\
-	kitty			\
+	alacritty		\
 	sddm			\
 	pipewire		\
 	wofi			\
