@@ -56,7 +56,7 @@ If you fork this repo you will need to generate a new cosign key (see Bazzite te
 Once built, you can switch to the image using `bootc`:
 
 ```sh
-sudo bootc switch dhcr.io/kariudo/bazzite-dx-hyperland
+sudo bootc switch ghcr.io/kariudo/bazzite-dx-hyperland
 ```
 
 ## Customizing packages
